@@ -1,11 +1,11 @@
 #!/bin/bash
 
 #**********************************************#
-#  	        automaticoff.sh                    #
-#	          Written by gdsr                    #
-#		         July 27, 2009                     #
-#					                                     #
-#	        Program automatic shutdown           #
+#  	        automaticoff.sh                #
+#	       Written by robfree              #
+#		 July 27, 2009         	       #
+#					       #
+#	        Program automatic shutdown     #
 #**********************************************#
 
 
@@ -15,7 +15,7 @@ E_NOTROOT=87			# Non-root error.
 E_WRONG_ARGS=85			# Not parameters error.
 SCRIPT_PARAMETERS="-s -c -h"	# Script-parameters.
 
-# Run as root, of course.
+# Comprobramos root.
 if [ "$UID" -ne "$ROOT_UID" ]
 then
 	echo "Must be root to run this script."
@@ -31,7 +31,7 @@ echo "`basename $0` -h for help"
 exit $E_WRONG_ARGS
 fi
 
-# Parameter -h  help 
+# Parametro -h ayuda
 if [ $1 == "-h" ] 
 then
 clear 
@@ -44,7 +44,7 @@ echo " -c 	for cancel automatic shutdown."
 exit
 fi
 
-# Parameter -s shutdown
+# Parametro -s apagado
 if [ $1 == "-s" ]
 then
 TIME=`zenity --entry \
@@ -58,7 +58,7 @@ echo $TIME
 exit
 fi
 
-# Parameter -c cancel
+# Parametro -c cancelar apagado
 if [ $1 == "-c" ]
 then
 shutdown -c
