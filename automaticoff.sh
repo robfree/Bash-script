@@ -2,7 +2,9 @@
 
 #**********************************************#
 #  	        automaticoff.sh                #
-#	       Written by robfree              #
+#	           Written by                  #
+#	   Roberto Serrano Diaz-Grande	       #
+#	    robertoserrano83@gmail.com         #
 #		 July 27, 2009         	       #
 #					       #
 #	        Program automatic shutdown     #
